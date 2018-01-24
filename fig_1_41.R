@@ -1,4 +1,5 @@
-x <- read.table("cars04.csv",header=T,sep=",")
+args <- commandArgs()
+x <- read.table(args[4],header=T,sep=",")
 str(x)
 ex <- as.numeric(as.character(x$City.MPG))
 qu <- as.numeric(as.character(x$HP))
